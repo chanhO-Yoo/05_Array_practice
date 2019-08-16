@@ -18,8 +18,6 @@ public class Test2 {
 		//case 2
 //		String[] fruit = {"딸기", "복숭아", "키위" , "사과", "바나나"};
 		
-		//cas3
-		
 		System.out.println(fruit[4]);
 		
 	}

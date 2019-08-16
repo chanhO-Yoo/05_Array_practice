@@ -27,10 +27,11 @@ public class Test4 {
 		}
 
 		//만들어진 배열을 복사(.clone()메서드 이용)
-		char[] phoneNumArr2 = phoneNumArr.clone();
+//		char[] phoneNumArr2 = phoneNumArr.clone();
 		
 		//만들어진 배열을 복사(System.arraycopy() 메소드 이용)
-		
+		char[] phoneNumArr2=new char[phoneNumArr.length];
+		System.arraycopy(phoneNumArr, 0, phoneNumArr2, 0, phoneNumArr.length);
 		
 		//복사본의 가운데 4자리(4,5,6,7번)을 *로 변경
 		for(int i=4;i<=7;i++) {
@@ -50,7 +51,7 @@ public class Test4 {
 		
 		//문자열(전화번호)복사본 생성
 		String phoneNum2;
-
+		
 		//복사본의 가운데 4자리 변경
 		//case1 : 가운데 4자리 제외 나머지 출력후 4자리 *출력
 		//String java.lang.String.substring(int beginIndex, int endIndex)
@@ -61,5 +62,6 @@ public class Test4 {
 //		phoneNum2 =phoneNum.replace(phoneNum.substring(4,8), "****");
 		
 		System.out.println(phoneNum2);
+
 	}
 }
